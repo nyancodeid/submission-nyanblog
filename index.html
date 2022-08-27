@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NyanBlog — All Developer News In One Place</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container flex">
+      <a href="#">
+        <h1>NyanBlog</h1>
+      </a>
+
+      <nav>
+        <a onclick="renderArticle('')" class="active" href="#">Home</a>
+        <a onclick="renderArticle('#devops')" href="#devops">DevOps</a>
+        <a onclick="renderArticle('#javascript')" href="#javascript">Javascript</a>
+        <a onclick="renderArticle('#php')" href="#php">PHP</a>
+        <a onclick="renderArticle('#productivity')" href="#productivity">Productivity</a>
+      </nav>
+
+      <a class="button button-primary" href="https://github.com/nyancodeid">Github</a>
+    </div>
+  </header>
+  
+  <main class="container">
+    <section class="hero flex">
+      <div class="section-description">
+        <span class="rounded-label">
+          <span><span class="today-date">24/08/22</span> · Update <span class="rounded-label new">12 Artikel Baru</span></span>
+        </span>
+        <h2>All Developer News In One Place</h2>
+        <p>Artikel pilihan yang Uptodate tentang perkembangan framework dan library favoritmu serta informasi teknologi dan stack terbaru. Read more quality articles. Stay up to date.</p>
+        <br>
+        <a href="#selengkapnya" class="button button-2x button-primary">Baca Selengkapnya</a>
+      </div>
+      <div class="section-image">
+        <img src="assets/hero.svg" alt="">
+      </div>
+    </section>
+
+    <section id="article" class="articles flex flex-col">
+      <div class="articles-title flex">
+        <h2>Artikel Terbaru</h2>
+        <span class="article-count">0 dari 12 artikel</span>
+      </div>
+      <div class="articles-container flex"></div>
+    </section>
+
+    <aside class="profile">
+      <article class="flex">
+        <figure class="profile-image">
+          <img src="assets/profile-picture.webp" alt="">
+          <figcaption>
+            Ryan Aunur Rassyid <br>
+            <span>(nyancodeid)</span>
+          </figcaption>
+        </figure>
+
+        <div class="profile-description">
+          <h2>Tentang Developer</h2>
+          <p>Hi, nama saya <strong>Ryan Aunur Rassyid (nyancodeid)</strong> saya seorang web developer yang saat ini sedang fokus pada bidang <b>Backend Developer</b> namun karena hobi justru menjadi <b>Full Stack Developer</b>. Saya sering berkarya membuat sebuah aplikasi web apps yang saya bagikan secara <i>open-source</i> melalui platform Github. Karena belajar harus dilakukkan seumur hidup saat ini saya sedang menempuh pendidikan di <a href="https://unisla.ac.id" class="unisla-link">Universitas Islam Lamongan (UNISLA)</a>. Jangan lupa menyapa saya dilaman social media saya ya!</p>
+
+          <div class="social-media--list flex">
+            <a href="https://github.com/nyancodeid" target="_blank" class="button button-primary">Github</a>
+            <a href="https://www.facebook.com/ryan.hac" target="_blank" class="button button-primary">Facebook</a>
+          </div>
+        </div>
+
+        <div class="profile-kucing">
+          <span>Saya suka <b>Kucing</b></span>
+          <img src="assets/koceng.webp" alt="Kucing">
+        </div>
+      </article>
+    </aside>
+  </main>
+  
+  <footer class="flex flex-col">
+    <div class="container">
+      <div class="footer-content flex">
+        <div class="footer-description">
+          <h2>NyanBlog — All Developer News In One Place</h2>
+          <p>Sebuah blog yang menyediakan informasi-informasi seputar dunia Programming pilihan setiap harinya. Uptodate tentang perkembangan framework dan library favoritmu serta informasi teknologi dan stack terbaru. Read more quality articles. Stay up to date.</p>
+          <br>
+          <span>Total Pengunjung</span>
+          <h3 class="visitor-count">1,678,188</h3>
+        </div>
+        <div class="footer-link">
+          <span>SOCIAL MEDIA</span>
+          <ul>
+            <li>
+              <a target="_blank" href="https://github.com/nyancodeid">Github</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/ryanaunur/">Linkedin</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/ryanaunur">Twitter</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.facebook.com/ryan.hac/">Facebook</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/nyandevid/">Instagram</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-link">
+          <span>PORTFOLIO</span>
+          <ul>
+            <li>
+              <a target="_blank" href="http://quotes.nyan.my.id/">Quotes: Hacktoberfest 2021</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://iro.nyan.my.id/">IRO: Color Tools</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://share.nyan.my.id/">InstaShare</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://mockify.nyan.my.id/">Mockify</a>
+            </li>
+            <li>
+              <a target="_blank" href="http://laradocs.nyan.my.id/">Laravel Docs PDF</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <span>Copyright &copy; 2022 — Ryan Aunur Rassyid (nyancodeid)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
